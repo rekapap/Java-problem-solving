@@ -6,12 +6,12 @@ import java.io.*;
 class Main {
     private static String LetterCapitalize(String originalString) {
         String[] words = originalString.split("\\b");
-        StringBuilder builder = new StringBuilder();
-        for(String w:words) {
-            w = w.substring(0, 1).toUpperCase() + w.substring(1);
-            builder.append(w);
+        StringBuilder stringBuilder = new StringBuilder();
+        for(String word:words) {
+            word = word.substring(0, 1).toUpperCase() + word.substring(1);
+            stringBuilder.append(word);
         }
-        return builder.toString();
+        return stringBuilder.toString();
     }
 
     public static void main (String[] args) {
