@@ -6,6 +6,7 @@ import java.io.*;
 class Main {
     private static long FirstFactorial(int number) {
         long sum = 1L;
+
         while(number >= 1)
         {
             sum*= number;
@@ -13,7 +14,6 @@ class Main {
         }
 
         return sum;
-
     }
 
     public static void main (String[] args) {
